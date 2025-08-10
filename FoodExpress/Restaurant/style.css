@@ -1,0 +1,90 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f4f9;
+      margin: 0;
+    }
+
+    .sidebar {
+     height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+      background-color: #212529;
+    }
+
+    .sidebar a {
+      color: #dee2e6;
+      text-decoration: none;
+      display: block;
+      padding: 0.75rem 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #343a40;
+      color: #ffc107;
+    }
+
+    .dashboard-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(48, 48, 48, 0.883);
+      transition: transform 0.3s ease;
+    }
+
+    .dashboard-card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.883);
+      transform: translateY(-5px);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      color: #ff5722;
+    }
+
+    .topbar {
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+
+    .btn-outline-dark {
+      border-radius: 30px;
+    }
+
+    @media (max-width: 767px) {
+      .sidebar {
+        display: none;
+      }
+
+      .sidebar-mobile {
+        display: block;
+        background-color: #212529;
+        padding: 1rem;
+      }
+
+      .sidebar-mobile a {
+        display: block;
+        color: #dee2e6;
+        padding: 0.5rem 0;
+        text-decoration: none;
+      }
+
+      .sidebar-mobile a:hover {
+        color: #ffc107;
+      }
+    }
+
+
+
+
+
+
+
+
+    

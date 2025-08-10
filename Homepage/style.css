@@ -1,0 +1,237 @@
+ /* Global Styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(120deg, rgb(41, 40, 40), rgb(45, 22, 16));
+
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: 800;
+      font-size: 12rem;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      color: #ffcc70;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      color: #f8f9fa !important;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      text-decoration: none;
+      overflow: hidden;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 100%;
+      height: 2px;
+      background-color: #ffc107;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-link.active {
+      color: #ffc107 !important;
+    }
+
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .icon-white {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Card Login */
+    .card-login {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      background-color: #ffffff;
+    }
+
+    .card-login:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12), 0 0 15px rgba(228, 67, 18, 0.2);
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .card-text {
+      color: #6c757d;
+      font-size: 0.95rem;
+    }
+
+    .login-container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    /* Buttons */
+    .btn-primary,
+    .btn-success,
+    .btn-dark {
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      border: none;
+      background-color: #ff5722;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover,
+    .btn-success:hover,
+    .btn-dark:hover {
+      background-color: #e64a19;
+      transform: translateY(-2px);
+    }
+
+    /* FadeIn Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hero Section */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  padding: 100px 0;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(225, 225, 225, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.hero form .form-control {
+  border-radius: 50px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+}
+
+.hero form .btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  .hero .col-md-6 {
+    max-width: 100%;
+  }
+  .hero .img-fluid {
+    max-height: 250px;
+  }
+}
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.3rem;
+      }
+      .hero-content {
+        padding: 2rem 0;
+      }
+      .hero {
+        justify-content: center;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .hero .img-fluid {
+        max-height: 250px;
+        margin-top: 2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content {
+        padding: 1.5rem 0;
+      }
+      .hero button[type="submit"], .hero input[type="search"] {
+        font-size: 1rem;
+        padding: 10px 16px;
+      }
+    }
+
+
+
+
+ 
+  

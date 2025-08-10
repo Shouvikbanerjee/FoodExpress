@@ -1,0 +1,87 @@
+/* General Reset and Background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f6f9fc 0%, #e0eafc 100%);
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(79, 228, 25, 0.76);
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input Fields */
+.form-control {
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.2);
+}
+
+/* Submit Button */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Link Styling */
+.text-center a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+  color: #1e7e34;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+ 
+
+  .btn-success {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .form-control {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+}
